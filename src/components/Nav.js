@@ -16,7 +16,7 @@ function Nav(){
                 <NavLink to={'/new'} exact="true">
                     New Grocery
                 </NavLink>
-                <NavLink to={'/grocery-item'} exact="true">
+                <NavLink to={'/saved-grocery'} exact="true">
                     Saved Groceries
                 </NavLink>
                 

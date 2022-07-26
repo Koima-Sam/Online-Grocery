@@ -10,7 +10,7 @@ function App() {
       <Nav />
       <Routes>
         <Route exact path="/" element={<Home />} />
-        <Route exact path="/grocery-item" element={<GroceryItem />} />
+        <Route exact path="/saved-grocery" element={<GroceryItem />} />
         <Route exact path="/new" element={<NewGrocery />} />
       </Routes>
   
