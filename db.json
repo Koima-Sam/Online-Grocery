@@ -1,0 +1,12 @@
+{
+    "groceries": [
+      {
+        "id": 1,
+        "name": "Red Cabbage",
+        "price": "45.07",
+        "image": "https://static.toiimg.com/photo/msid-70464115/70464115.jpg?1700397",
+        "description": "Fresh Out of Farm ",
+        "delivery":"free"
+      }
+    ]
+  }
