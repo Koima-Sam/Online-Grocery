@@ -1,4 +1,4 @@
-import './App.css';
+import './index.css';
 import Home from './components/Home';
 import GroceryItem from './components/GroceryItem';
 import NewGrocery from './components/NewGrocery';
