@@ -10,13 +10,13 @@ function Nav(){
             </div>
         
             <div className="nav-links">
-                <NavLink to={'/'} exact>
+                <NavLink to={'/'} exact="true">
                     Home
                 </NavLink>
-                <NavLink to={'/new'} exact>
+                <NavLink to={'/new'} exact="true">
                     New Grocery
                 </NavLink>
-                <NavLink to={'/grocery-item'}>
+                <NavLink to={'/grocery-item'} exact="true">
                     Saved Groceries
                 </NavLink>
                 
