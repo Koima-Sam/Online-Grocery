@@ -1,15 +1,15 @@
 import React from "react";
 
-function GroceryItem() {
+function GroceryItem({name,id,price,description,image}) {
   return (
     <div className="n1">
       <img
-        src=""
-        alt="item image"
+        src={image}
+        alt="grocery"
       />
-      <h2>Red Cabbage</h2>
-      <p>Ksh per kg</p>
-      <h4>Description</h4>
+      <h2>{name}</h2>
+      <p>Ksh {price} per kg</p>
+      <h4>{description}</h4>
       <button>Save Item</button>
       <button className="edit">
         Edit Grocery <i className="far fa-edit"></i>
