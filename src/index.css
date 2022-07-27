@@ -37,7 +37,7 @@ span {
 .groceries{
   display: flex;
   flex-wrap: wrap;
-  margin-left:4%;
+  /* margin-left:4%; */
   /* justify-content: space-evenly; */
 
 }
@@ -45,12 +45,13 @@ span {
   font-family: 'Poppins';
   cursor: pointer;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-  margin: 2% 4%;
+  margin: 2% 2%;
   /* border: 1px solid green; */
   min-height: 300px;
   max-width: 200px;
   text-align: center;
 }
+
 .n1 h2{
   color: orange;
   font-weight: 500;
@@ -72,4 +73,53 @@ button,.edit{
 }
 .edit{
   background-color: limegreen;
+}
+h2, .container{
+  margin: 0% 5%
+}
+.form{
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+  border-radius: 30px;
+  margin:5% 30%;
+  background: white;
+}
+
+.form h2{
+
+  text-align: center;
+  color: orange;
+  padding-top: 5%;
+  font-weight: 700;
+  font-size: 30px;
+}
+input[type=text]{
+  font-family: 'Poppins';
+  width: 90%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  color: black;
+  margin-top: 10%;
+
+}
+
+
+input[type=submit]  {
+  cursor: pointer;
+  background-color:rgb(228, 153, 15);
+  color: white;
+  margin: 10% 20%;
+  padding: 2% 3%;
+  border: none;
+  border-radius: 10px;
+  font-size: 18px;
+  width: 50%;
+  text-align: center;
+ 
+}
+.bg{
+  border: 1px solid yellowgreen;
+  background-size: contain;
+  height: 100%;
+  background-image: url('https://i.pinimg.com/736x/0a/5b/36/0a5b36e385422555e31b734b63cfa1ba.jpg');
 }
