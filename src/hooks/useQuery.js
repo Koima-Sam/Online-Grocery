@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 
+
 function useQuery(url) {
   const [data, setGroceries] = useState([]);
   useEffect(() => {
@@ -7,6 +8,6 @@ function useQuery(url) {
       .then((resp) => resp.json())
       .then((data) => setGroceries(data));
   },[]);
-  return {data}
+  return {data, setGroceries}
 }
 export default useQuery;
