@@ -1,6 +1,8 @@
 import React from "react";
+import { Routes, Route, Link } from "react-router-dom";
+import EditForm from "./EditForm";
 
-function GroceryItem({name,id,price,description,image,isSaved,onUpdate}) {
+function GroceryItem({name,id,price,description,image,isSaved,onUpdate,onDelete,onEdit}) {
   function handleSave(){
     fetch(`http://localhost:4000/groceries/${id}`,{
             method : "PATCH",
@@ -17,19 +19,30 @@ function GroceryItem({name,id,price,description,image,isSaved,onUpdate}) {
           )
         .catch((error)=>console.log(error))
   }
+  function handleDelete(e){
+    fetch(`http://localhost:4000/groceries/${id}`,{
+      method:"DELETE",
+    })
+    .then(resp => resp.json())
+    .then(()=>onDelete(id))
+  }
+  
   return (
     <div className="n1">
+      <h1><i className="fa" onClick={handleDelete}>&#xf014;</i></h1>
       <img
         src={image}
         alt="grocery"
-      />
-      <h2>{name}</h2>
+      /><br/>
+      <input value={name} readOnly/> 
       <p>Ksh {price} per kg</p>
-      <h4>{description}</h4>
+      <textarea value={description} readOnly/> <br/>
       <button onClick={handleSave}>{isSaved? "Discard":"Save"}</button><br/>
+      <Link to='/edit' state={{name, id, image , description,price}}>
       <button className="edit">
         Edit Grocery <i className="far fa-edit"></i>
       </button>
+      </Link>
     </div>
   );
 }
