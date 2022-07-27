@@ -2,7 +2,7 @@ import React from "react";
 // import useQuery from "../hooks/useQuery";
 import GroceryItem from "./GroceryItem";
 
-function Saved({groceries,onUpdate}){
+function Saved({groceries,onUpdate,onDelete}){
     // const{data:groceries} = useQuery('http://localhost:4000/groceries')
 
     const groceryItems = groceries.map((grocery, index)=>{
@@ -15,6 +15,7 @@ function Saved({groceries,onUpdate}){
             image = {grocery.image}
             isSaved ={grocery.isSaved}
             onUpdate={onUpdate}
+            onDelete = {onDelete}
         />    
     })
     // console.log(groceries)

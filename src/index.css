@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
 }
-.nav{
+.nav {
   border-bottom: 2px solid rgb(180, 180, 168);
 }
 .nav,
@@ -34,33 +34,28 @@ span {
 .logo img {
   height: 100px;
 }
-.groceries{
+.groceries {
   display: flex;
   flex-wrap: wrap;
   /* margin-left:4%; */
   /* justify-content: space-evenly; */
-
 }
-.n1{
-  font-family: 'Poppins';
+.n1 {
+  font-family: "Poppins";
   cursor: pointer;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   margin: 2% 2%;
   /* border: 1px solid green; */
   min-height: 100px;
-  min-width: 230px;
+  min-width: 200px;
   text-align: center;
 }
-
-.n1 h2{
-  color: orange;
-  font-weight: 500;
-}
-.n1 img{
+.n1 img {
   height: 120px;
   padding: 5%;
 }
-button,.edit{
+button,
+.edit {
   cursor: pointer;
   background-color: orange;
   color: white;
@@ -71,42 +66,41 @@ button,.edit{
   margin: 6% 0%;
   border-radius: 10px;
 }
-.edit{
+.edit {
   background-color: limegreen;
 }
-h2, .container{
-  margin: 0% 5%
+h2,
+.container {
+  margin: 0% 5%;
 }
-.form{
-  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+.form {
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
   border-radius: 30px;
-  margin:5% 30%;
+  margin: 5% 30%;
   background: white;
 }
 
-.form h2{
-
+.form h2 {
   text-align: center;
   color: orange;
   padding-top: 5%;
   font-weight: 700;
   font-size: 30px;
 }
-input[type=text]{
-  font-family: 'Poppins';
+input[type="text"] {
+  font-family: "Poppins";
   width: 90%;
   padding: 12px;
   border: 1px solid #ccc;
   border-radius: 4px;
   color: black;
   margin-top: 10%;
-
 }
 
-
-input[type=submit]  {
+input[type="submit"] {
   cursor: pointer;
-  background-color:rgb(228, 153, 15);
+  background-color: rgb(228, 153, 15);
   color: white;
   margin: 10% 20%;
   padding: 2% 3%;
@@ -115,11 +109,27 @@ input[type=submit]  {
   font-size: 18px;
   width: 50%;
   text-align: center;
- 
 }
-.bg{
+.bg {
   border: 1px solid yellowgreen;
   background-size: contain;
   height: 100%;
-  background-image: url('https://i.pinimg.com/736x/0a/5b/36/0a5b36e385422555e31b734b63cfa1ba.jpg');
+  background-image: url("https://i.pinimg.com/736x/0a/5b/36/0a5b36e385422555e31b734b63cfa1ba.jpg");
+}
+.fa {
+  color: red;
+  font-size: 25px;
+}
+.n1 > input {
+  text-align: center;
+  border: none;
+  font-size: 20px;
+  width: 50%;
+  color: greenyellow;
+  margin: 0%;
+  padding: 0;
+}
+textarea {
+  border: none;
+  text-align: center;
 }

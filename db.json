@@ -50,7 +50,7 @@
       "image": "https://i.pinimg.com/736x/71/4d/fe/714dfeb14adfa568fcf7e6be682383a4--mango-tree-sanjeev-kapoor.jpg",
       "description": "Ripe and juicy ",
       "delivery": "free",
-      "isSaved": false
+      "isSaved": true
     },
     {
       "id": 7,
@@ -67,12 +67,13 @@
       "price": "65.99",
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsch935M1NGP2djC8FTQJy1sCDxnH7IMRfpAh4xWPyKl7Kdb3ZMzX_sbEr89WK-Xncz3U&usqp=CAU",
       "description": "Long and juicy ",
-      "delivery": "free"
+      "delivery": "free",
+      "isSaved": true
     },
     {
       "id": 9,
       "name": "Cabbage",
-      "price": "25",
+      "price": "44.5",
       "image": "https://www.almanac.com/sites/default/files/styles/large/public/image_nodes/cabbage_st-design_gettyimages.jpg?itok=8AzBHNDN",
       "description": "Fresh and green",
       "delivery": "free",
@@ -80,19 +81,11 @@
     },
     {
       "id": 10,
-      "name": "EggPkant",
-      "price": "115.09",
+      "name": "EggPlant",
+      "price": "105.09",
       "image": "https://media.istockphoto.com/photos/eggplant-isolated-on-white-picture-id510515443?k=20&m=510515443&s=612x612&w=0&h=VZfZR8XRcGJzOcpcB1jF4teU-flgqcXdwYsmfM7OzDI=",
       "description": "Fresh and purple ",
       "delivery": "free"
-    },
-    {
-      "name": "chilly",
-      "price": "23",
-      "description": "hot",
-      "image": "https://confidiet.com/wp-content/uploads/2021/10/1607436883309-jpg-500x500-1.jpg",
-      "id": 11,
-      "isSaved": false
     }
   ]
 }
