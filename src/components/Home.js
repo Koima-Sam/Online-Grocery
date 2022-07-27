@@ -1,9 +1,9 @@
 import React from "react";
-import useQuery from "../hooks/useQuery";
+// import useQuery from "../hooks/useQuery";
 import GroceryItem from "./GroceryItem";
 
-function Home(){
-    const{data:groceries} = useQuery('http://localhost:4000/groceries')
+function Home({groceries,onUpdate}){
+    // const{data:groceries} = useQuery('http://localhost:4000/groceries')
 
     const groceryItems = groceries.map((grocery, index)=>{
         return <GroceryItem 
@@ -13,9 +13,11 @@ function Home(){
             description = {grocery.description}
             id = {grocery.id}
             image = {grocery.image}
+            isSaved ={grocery.isSaved}
+            onUpdate ={onUpdate}
         />    
     })
-    console.log(groceries)
+    // console.log(groceries)
     return(
         <div className="groceries">
             {groceryItems}
