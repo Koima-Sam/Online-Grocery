@@ -47,8 +47,8 @@ span {
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   margin: 2% 2%;
   /* border: 1px solid green; */
-  min-height: 300px;
-  max-width: 200px;
+  min-height: 100px;
+  min-width: 230px;
   text-align: center;
 }
 
