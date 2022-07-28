@@ -10,7 +10,7 @@ import EditForm from './components/EditForm';
 function App() {
   const[groceries,setGroceries] =useState([])
   useEffect(() => {
-    fetch('http://localhost:4000/groceries')
+    fetch('https://afternoon-cove-03847.herokuapp.com/groceries')
       .then((resp) => resp.json())
       .then((data) => setGroceries(data));
   },[]);
