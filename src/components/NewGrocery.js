@@ -1,6 +1,8 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 function NewGrocery({onAddNew}){
+    const navigate = useNavigate()
     const[grocery,setGrocery]=useState(
         {
             name:"",
@@ -25,7 +27,10 @@ function NewGrocery({onAddNew}){
             body:JSON.stringify(grocery)
         })
         .then(response => response.json())
-        .then(data => onAddNew(data))
+        .then(data => {
+            onAddNew(data)
+            navigate('/')
+        })
         .catch((error)=>console.log(error))
     }
     return(
