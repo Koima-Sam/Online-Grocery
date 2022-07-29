@@ -30,7 +30,7 @@ then navigate to the root folder and open with your editor<br>
 
 ## Technologies used
 <ul>
-<li>ReactJs</li>
+<li>React</li>
 <li>API's</li>
 <li>CSS</li>
 </ul>
