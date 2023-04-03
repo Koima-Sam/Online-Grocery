@@ -10,7 +10,7 @@ import EditForm from './components/EditForm';
 function App() {
   const[groceries,setGroceries] =useState([])
   useEffect(() => {
-    fetch('https://json-server-template-production-a9ce.up.railway.app/groceries')
+    fetch('https://fair-jade-elk-slip.cyclic.app/groceries')
       .then((resp) => resp.json())
       .then((data) => setGroceries(data));
   },[]);
