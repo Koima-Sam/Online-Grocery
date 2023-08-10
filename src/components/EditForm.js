@@ -17,7 +17,7 @@ export default function EditForm({onUpdate}){
     console.log(grocery)
     function handleSubmit(e){
         e.preventDefault()
-        fetch(`https://afternoon-cove-03847.herokuapp.com/groceries/${id}`,{
+        fetch(`https://fair-jade-elk-slip.cyclic.app/groceries/${id}`,{
                 method : "PATCH",
                 headers : {
                     'Content-Type':'application/json',
@@ -27,9 +27,8 @@ export default function EditForm({onUpdate}){
             })
             .then(response => response.json())
             .then(data => {
-              console.log(data)
-              onUpdate(data,id)
               navigate("/");
+              onUpdate(data,id)
         }
               )
             .catch((error)=>console.log(error))
