@@ -18,7 +18,7 @@ function NewGrocery({onAddNew}){
     function onGrocerySubmit(e){
         e.preventDefault();
         console.log(grocery)
-        fetch("https://afternoon-cove-03847.herokuapp.com/groceries",{
+        fetch("https://fair-jade-elk-slip.cyclic.app/groceries",{
             method : "POST",
             headers : {
                 'Content-Type':'application/json',
