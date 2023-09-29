@@ -3,7 +3,7 @@ import {  Link } from "react-router-dom";
 
 function GroceryItem({name,id,price,description,image,isSaved,onUpdate,onDelete,onEdit}) {
   function handleSave(){
-    fetch(`https://afternoon-cove-03847.herokuapp.com/groceries/${id}`,{
+    fetch(`https://fair-jade-elk-slip.cyclic.app/groceries/${id}`,{
             method : "PATCH",
             headers : {
                 'Content-Type':'application/json',
@@ -19,7 +19,7 @@ function GroceryItem({name,id,price,description,image,isSaved,onUpdate,onDelete,
         .catch((error)=>console.log(error))
   }
   function handleDelete(e){
-    fetch(`https://afternoon-cove-03847.herokuapp.com/groceries/${id}`,{
+    fetch(`https://fair-jade-elk-slip.cyclic.app/groceries/${id}`,{
       method:"DELETE",
     })
     .then(resp => resp.json())
